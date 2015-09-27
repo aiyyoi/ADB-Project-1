@@ -73,7 +73,3 @@ precision = args.p
 bingParams['Query'] = "'"+query+"'"
 SearchAndDisplay(bingParams)
 
-
-
-
-
