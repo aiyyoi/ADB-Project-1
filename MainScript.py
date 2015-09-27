@@ -15,36 +15,50 @@ accountKeyEnc = base64.b64encode(accountKey + ':' + accountKey)
 headers = {'Authorization': 'Basic ' + accountKeyEnc}
 
 ############### Method for Each Search and Display top10 Results #####################
-def SearchAndDisplay(bingParams):
+def SearchAndDisplay(bingParams, nRound):
+	print '='*15+ '\nRound '+str(nRound)
 	#search and display flow
 	bingUrl = bingUrlBase+urllib.urlencode(bingParams)
-	print bingUrl
+	print 'Query\t= '+ bingParams['Query']
+	print 'Precision\t= '+ str(precision)
+	print 'URL: '+bingUrl
 	req = urllib2.Request(bingUrl, headers = headers)
 	response = urllib2.urlopen(req)
 	# decode response string to JSON format
 	content = json.loads(response.read())
 	#content contains the xml/json response from Bing. 
 	i = 1
+	feedbackList = []
+	print 'Total no. of results : 10'
+	print 'Bing Search Results: \n'+ '='*15
 	for eachResult in content['d']['results']:
-		print str(i)+": "+eachResult['Title']+'\n'+eachResult['Url']+'\n'+eachResult['Description']+'\n'
+		print '\nResult '+str(i)+":"
+		print "[\n Title: "+eachResult['Title']
+		print ' URL: '+eachResult['DisplayUrl']
+		print ' Summary: '+eachResult['Description']+'\n]'
 		i += 1
-	TakeFeedback(content['d']['results'])
+		TakeFeedback(eachResult, feedbackList)
+
+	CalculateAndDecide(feedbackList, nRound)
 	#return content['d']['results']
 
 ################ Take Feedback #######################################################
-def TakeFeedback(resultList):
-	user_input = raw_input('Tell us which is relevant by index: ').split()
-	feedbackList = []
-	for eachIndex in user_input:
-		feedbackList.append(resultList[int(eachIndex)-1])
-	CalculateAndDecide(feedbackList)
+def TakeFeedback(result, feedbackList):
+	user_input = raw_input('Relevant (Y/N)? ').lower()
+	if user_input == 'y':
+		feedbackList.append(result)
+	if user_input != 'y' and user_input != 'n':
+		print 'Wrong input'
+		TakeFeedback(result, feedbackList)
 
 ################ Calculate Current Round Precision and Choose Path ###################
-def CalculateAndDecide(feedbackList):
+def CalculateAndDecide(feedbackList, nRound):
 	cur_precision = float(len(feedbackList))/10.0
-	#print cur_precision == 0.0
+	print '='*15
+	print 'FEEDBACK SUMMARY\n'+ 'Query: '+ bingParams['Query']+ '\nCurrent Precision: '+ str(cur_precision)
 	if (cur_precision > 0.0 and cur_precision < float(precision)):
-		AnalyzeAndModify(feedbackList)
+		print 'Still blow the desired precision'
+		AnalyzeAndModify(feedbackList, nRound+1)
 	elif cur_precision == 0.0:
 		print 'Precision at 0, unable to proceed'
 		exit()
@@ -53,12 +67,12 @@ def CalculateAndDecide(feedbackList):
 		exit()
 
 ###############  User Feedback and Modify Search Query    ############################
-def AnalyzeAndModify(relatedList): # might need bingParams as input
+def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
 	#
 	#
 	bingParams['Query'] = "'new query for now'"
-	SearchAndDisplay(bingParams)
+	SearchAndDisplay(bingParams, nRound)
 
 
 #################### New Search and Feedback Session #################################
@@ -67,9 +81,8 @@ parser.add_argument('-q', help = 'Single quoted search query', required = True)
 parser.add_argument('-p', help = 'Precision @10, a number from 0 to 1', required = True)
 args = parser.parse_args()
 
-print('Initial Query and feedback session:')
 query = args.q
 precision = args.p
 bingParams['Query'] = "'"+query+"'"
-SearchAndDisplay(bingParams)
+SearchAndDisplay(bingParams, 1)
 
