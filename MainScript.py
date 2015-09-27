@@ -38,7 +38,6 @@ def SearchAndDisplay(bingParams, nRound):
 		print ' Summary: '+eachResult['Description']+'\n]'
 		i += 1
 		TakeFeedback(eachResult, feedbackList)
-
 	CalculateAndDecide(feedbackList, nRound)
 	#return content['d']['results']
 
@@ -46,6 +45,10 @@ def SearchAndDisplay(bingParams, nRound):
 def TakeFeedback(result, feedbackList):
 	user_input = raw_input('Relevant (Y/N)? ').lower()
 	if user_input == 'y':
+		result['Relevant'] = 'y'
+		feedbackList.append(result)
+	if user_input == 'n':
+		result['Relevant'] = 'n'
 		feedbackList.append(result)
 	if user_input != 'y' and user_input != 'n':
 		print 'Wrong input'
@@ -53,7 +56,11 @@ def TakeFeedback(result, feedbackList):
 
 ################ Calculate Current Round Precision and Choose Path ###################
 def CalculateAndDecide(feedbackList, nRound):
-	cur_precision = float(len(feedbackList))/10.0
+	items = 0
+	for each in feedbackList:
+		if each['Relevant'] == 'y':
+			items += 1
+	cur_precision = float(items)/10.0
 	print '='*15
 	print 'FEEDBACK SUMMARY\n'+ 'Query: '+ bingParams['Query']+ '\nCurrent Precision: '+ str(cur_precision)
 	if (cur_precision > 0.0 and cur_precision < float(precision)):
