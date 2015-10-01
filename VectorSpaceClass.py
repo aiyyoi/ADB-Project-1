@@ -2,42 +2,47 @@
 
 from collections import defaultdict
 import TermParamsClass
+import math
 
 class VectorSpace:
 		
 	N = 10 #Total number of documents in the corpus
 
+	@staticmethod
 	def computeTermFreq(rawFreq):
 		return rawFreq
 
-	def computerInverseDocFreq(numDocsWithTerm, numDocsTotal):
-		return log(numDocsWithTerm / numDocsTotal)
+	@staticmethod
+	def computeInverseDocFreq(numDocsWithTerm, numDocsTotal):
+		return math.log(float(numDocsWithTerm) / numDocsTotal)
 
 	def __init__(self,docs):
 		self.vocab = set([]) #Build vocalbulary from title and text of all documents
-		for d in docs["d"]["results"]:
+		for d in docs:#["d"]["results"]:
 			d["Title"] = d["Title"].split()
 			d["Description"] = d["Description"].split()
-			vocab = vocab.union(d["Title"])
-			vocab = vocab.union(d["Description"])
-
+			self.vocab.update(d["Title"])
+			self.vocab.update(d["Description"])
 
 		stopWords = set([])
-                file = open("/resources/english",'r').readlines()
+                file = open("resources/english",'r').readlines()
                 for i in range(len(file)):
                         stopWords.update(file[i].strip('\n'))
-		vocab = vocab - stopWords
+		self.vocab = self.vocab - stopWords
 
 		#Insert Document-tf pairs into the inverted file
-		self.invFile = defaultdict(TermParams)
-		for v in vocab:
+		self.invFile = defaultdict(TermParamsClass.TermParams)
+		for v in self.vocab:
 			temp = {};
-			for d in docs["d"]["results"]:
-				tf= computeTermFreq(d["Title"].count(v) + d["Description"].count(v))
+			for d in docs:#["d"]["results"]:
+				tCount = d["Title"].count(v) + d["Description"].count(v)
+				tf= self.computeTermFreq(tCount)
 				if tf != 0:
 					temp[d["Url"]] = tf 
-			idf= computeInverseDocFreq(len(temp.keys()), self.N)
-			invFile[v] = TermParams(idf,temp)
+
+			print temp.keys()
+			idf= self.computeInverseDocFreq(len(temp.keys()), self.N)
+			self.invFile[v] = TermParamsClass.TermParams(idf,temp)
 
 		
 

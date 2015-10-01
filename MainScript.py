@@ -35,7 +35,7 @@ def SearchAndDisplay(bingParams, nRound):
 	for eachResult in content['d']['results']:
 		print '\nResult '+str(i)+":"
 		print "[\n Title: "+eachResult['Title']
-		print ' URL: '+eachResult['DisplayUrl']
+		print ' URL: '+eachResult['Url']
 		print ' Summary: '+eachResult['Description']+'\n]'
 		i += 1
 		TakeFeedback(eachResult, feedbackList)
@@ -77,7 +77,8 @@ def CalculateAndDecide(feedbackList, nRound):
 ###############  User Feedback and Modify Search Query    ############################
 def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
-	v = VectorSpace(relatedList)
+
+	v = VectorSpaceClass.VectorSpace(relatedList)
 	print v
 
 	bingParams['Query'] = "'new query for now'"
