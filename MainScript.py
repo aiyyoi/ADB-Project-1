@@ -3,6 +3,7 @@ import urllib
 import base64
 import json
 import argparse
+import VectorSpaceClass
 
 bingUrlBase = 'https://api.datamarket.azure.com/Bing/Search/Web?'
 bingParams = {'$top': '10', '$format': 'json'}
@@ -76,8 +77,9 @@ def CalculateAndDecide(feedbackList, nRound):
 ###############  User Feedback and Modify Search Query    ############################
 def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
-	#
-	#
+	v = VectorSpace(relatedList)
+	print v
+
 	bingParams['Query'] = "'new query for now'"
 	SearchAndDisplay(bingParams, nRound)
 
