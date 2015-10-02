@@ -35,7 +35,7 @@ def SearchAndDisplay(bingParams, nRound):
 	for eachResult in content['d']['results']:
 		print '\nResult '+str(i)+":"
 		print "[\n Title: "+eachResult['Title']
-		print ' URL: '+eachResult['Url']
+		print ' URL: '+eachResult['DisplayUrl']
 		print ' Summary: '+eachResult['Description']+'\n]'
 		i += 1
 		TakeFeedback(eachResult, feedbackList)
@@ -62,7 +62,7 @@ def CalculateAndDecide(feedbackList, nRound):
 		if each['Relevant'] == 'y':
 			items += 1
 	cur_precision = float(items)/10.0
-	print '='*15
+	print '\n'+ '='*15
 	print 'FEEDBACK SUMMARY\n'+ 'Query: '+ bingParams['Query']+ '\nCurrent Precision: '+ str(cur_precision)
 	if (cur_precision > 0.0 and cur_precision < float(precision)):
 		print 'Still blow the desired precision'

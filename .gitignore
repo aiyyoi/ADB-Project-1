@@ -1,2 +1,7 @@
 key.json
 sampleOutput.txt
+sampleInput.txt
+transcript.txt
+.DS_Store
+TermParamsClass.pyc
+VectorSpaceClass.pyc

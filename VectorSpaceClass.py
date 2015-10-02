@@ -38,9 +38,8 @@ class VectorSpace:
 				tCount = d["Title"].count(v) + d["Description"].count(v)
 				tf= self.computeTermFreq(tCount)
 				if tf != 0:
-					temp[d["Url"]] = tf 
+					temp[d["DisplayUrl"]] = tf 
 
-			print temp.keys()
 			idf= self.computeInverseDocFreq(len(temp.keys()), self.N)
 			self.invFile[v] = TermParamsClass.TermParams(idf,temp)
 
