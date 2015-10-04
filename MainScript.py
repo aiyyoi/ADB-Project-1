@@ -79,7 +79,10 @@ def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
 
 	v = VectorSpaceClass.VectorSpace(relatedList)
-	print v
+	for eachTerm in v.invFile:
+		print eachTerm + ': idf-'+ str(v.invFile[eachTerm].idf)
+		for eachDoc in v.invFile[eachTerm].doc_tf_dict:
+			print '   docID-'+eachDoc+ ' -tf-'+str(v.invFile[eachTerm].doc_tf_dict[eachDoc])
 
 	bingParams['Query'] = "'new query for now'"
 	SearchAndDisplay(bingParams, nRound)
