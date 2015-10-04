@@ -25,8 +25,8 @@ class VectorSpace:
 			if d['Relevant'] == 'y':
 				d["Title"] = d["Title"].split()
 				d["Description"] = d["Description"].split()
-				d["Title"] = map(lambda s:s.strip('.,!()[]&'), d['Title'])
-				d["Description"] = map(lambda s:s.strip('.,!()[]&'), d["Description"])
+				d["Title"] = map(lambda s:s.strip('.,!()[]&"').lower(), d['Title'])
+				d["Description"] = map(lambda s:s.strip('.,!()[]&"').lower(), d["Description"])
 				self.vocab.update(d["Title"])
 				self.vocab.update(d["Description"])
 
