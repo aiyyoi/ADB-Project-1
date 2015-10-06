@@ -78,7 +78,7 @@ def CalculateAndDecide(feedbackList, nRound):
 def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
 
-	v = VectorSpaceClass.VectorSpace(relatedList)
+	v = VectorSpaceClass.VectorSpace(relatedList,)
 	for eachTerm in v.invFile:
 		print eachTerm + ': idf-'+ str(v.invFile[eachTerm].idf)
 		for eachDoc in v.invFile[eachTerm].doc_tf_dict:

@@ -4,4 +4,12 @@ class TermParams:
 		self.idf = idf;
 		self.doc_tf_dict = doc_tf_dict;
 
+	def getIdf():
+		return self.idf
+
+	def getDocs():
+		return doc_tf_dict
+
+
+
 

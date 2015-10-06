@@ -13,12 +13,13 @@ class VectorSpace:
 		if numDocsWithTerm == 0:
 			return 0
 		else:
-			return math.log(float(numDocsWithTerm) / numDocsTotal)
+			return -math.log(float(numDocsWithTerm) / numDocsTotal)
 	@staticmethod
 	def getAllIndices(list,term):
 		return [i for i, x in enumerate(list) if x == term]
 
-	def __init__(self,docs):
+	def __init__(self,docs,origQuery):
+		self.origQuery = origQuery.split()
 		self.vocab = set([]) #Build vocalbulary from title and text of all relevant documents
 		for d in docs:	
 			d["Title"] = d["Title"].split()
@@ -39,9 +40,11 @@ class VectorSpace:
 
 		#Insert Document-tf pairs into the inverted file
 		self.invFile = defaultdict(TermParamsClass.TermParams)
+		self.relevanceList = {}
 		for v in self.vocab:
 			temp = {};
-			for d in docs:		
+			for d in docs:
+				self.relevanceList[d["DisplayUrl"]] = d["Relevant"]		
 				pos = self.getAllIndices(d["Title"] + d["Description"],v)
 				if len(pos) != 0:	
 					temp[d["DisplayUrl"]] = pos
@@ -51,4 +54,24 @@ class VectorSpace:
 
 		
 
-		
+	#Function to create weight vectors for the relevant docs, non-relevant docs as well as the current query
+	def createDocVectors(self,originalQuery):
+		i = 0
+		relWeights = [0 for i in range(len(self.invFile.keys()))]
+		nonRelWeights = [0 for i in range(len(self.invFile.keys()))] 
+		queryWeights = [0 for i in range(len(self.invFile.keys()))]
+		for key in sorted(self.invFile.keys()):
+			currIdf = self.invFile[key].getIdf()
+			queryWeights[i] = self.origQuery.count(self.invFile[key])*currIdf
+			docs = self.invFile[key].getDocs()
+			for d in docs.keys():
+				if d["Relevant"] == 'y': 
+					relWeights[i] += len(docs[d])*currIdf
+				else:
+					nonRelWeights[i] += len(docs[d])*currIdf
+
+			i = i+1
+
+		return {"rel":relWeights,"nonRel":nonRelWeights,"queryWeights":queryWeights}						
+			
+				
