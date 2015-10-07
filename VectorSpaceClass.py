@@ -19,6 +19,8 @@ class VectorSpace:
 		return [i for i, x in enumerate(list) if x == term]
 
 	def __init__(self,docs,origQuery):
+		self.numRel = 0
+		self.numNonRel = 0
 		self.origQuery = origQuery.split()
 		self.vocab = set([]) #Build vocalbulary from title and text of all relevant documents
 		for d in docs:	
@@ -59,19 +61,29 @@ class VectorSpace:
 		i = 0
 		relWeights = [0 for i in range(len(self.invFile.keys()))]
 		nonRelWeights = [0 for i in range(len(self.invFile.keys()))] 
-		queryWeights = [0 for i in range(len(self.invFile.keys()))]
+		queryWeights = [0 for i in range(len(self.invFile.keys()))]	
 		for key in sorted(self.invFile.keys()):
 			currIdf = self.invFile[key].getIdf()
 			queryWeights[i] = self.origQuery.count(self.invFile[key])*currIdf
 			docs = self.invFile[key].getDocs()
 			for d in docs.keys():
-				if d["Relevant"] == 'y': 
+				if d["Relevant"] == 'y':
+					self.numRel = self.numRel + 1; 
 					relWeights[i] += len(docs[d])*currIdf
 				else:
+					self.numNonRel = self.numNonRel + 1
 					nonRelWeights[i] += len(docs[d])*currIdf
 
 			i = i+1
 
 		return {"rel":relWeights,"nonRel":nonRelWeights,"queryWeights":queryWeights}						
 			
-				
+	
+	def getNumRel(self):
+		return self.numRel
+
+	def getNumNonRel(self):
+		return self.numNonRel			
+
+	def getInvFileKeys():
+		return self.invFile.keys()	
