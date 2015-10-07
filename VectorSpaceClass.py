@@ -57,23 +57,23 @@ class VectorSpace:
 		
 
 	#Function to create weight vectors for the relevant docs, non-relevant docs as well as the current query
-	def createDocVectors(self,originalQuery):
+	def createDocVectors(self):#self,originalQuery):
 		i = 0
 		relWeights = [0 for i in range(len(self.invFile.keys()))]
 		nonRelWeights = [0 for i in range(len(self.invFile.keys()))] 
 		queryWeights = [0 for i in range(len(self.invFile.keys()))]	
+		i = 0
 		for key in sorted(self.invFile.keys()):
 			currIdf = self.invFile[key].getIdf()
 			queryWeights[i] = self.origQuery.count(self.invFile[key])*currIdf
 			docs = self.invFile[key].getDocs()
 			for d in docs.keys():
-				if d["Relevant"] == 'y':
+				if self.relevanceList[d] == 'y':
 					self.numRel = self.numRel + 1; 
 					relWeights[i] += len(docs[d])*currIdf
 				else:
 					self.numNonRel = self.numNonRel + 1
 					nonRelWeights[i] += len(docs[d])*currIdf
-
 			i = i+1
 
 		return {"rel":relWeights,"nonRel":nonRelWeights,"queryWeights":queryWeights}						
@@ -85,5 +85,5 @@ class VectorSpace:
 	def getNumNonRel(self):
 		return self.numNonRel			
 
-	def getInvFileKeys():
+	def getInvFileKeys(self):
 		return self.invFile.keys()	

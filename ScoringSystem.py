@@ -1,4 +1,4 @@
-#import heapq
+import heapq
 
 # Input:
 #	Document titles
@@ -32,27 +32,28 @@ class ScoringSystem():
 	def scalarMultiply(scalar,vector):
 		return [float(x) * scalar for x in vector]
 	
-	def scoreRocchio():
-		relDocVec = self.vectors["relWeights"]
-		nonRelDocVec = self.vectors["nonRelDocWeights"]
+	def scoreRocchio(self):
+		relDocVec = self.vectors["rel"]
+		nonRelDocVec = self.vectors["nonRel"]
 		queryVec = self.vectors["queryWeights"]
 
-		temp1 = scalarMultiply(self.alpha,queryVec)	
-		temp2 = scalarMultiply(self.beta,relDocVec)
-		temp2 = scalarMultiply(1/float(self.numRel),relDocVec)
-		temp3 = scalarMultiply(self.gamma,nonRelDocVec)
-		temp3 = scalarMultiply(1/float(self.numNonRel),nonRelDocVec)
-		temp4 = subtractVectors(temp2,temp3)
-		return addVectors(temp1,temp4)
+		temp1 = self.scalarMultiply(self.alpha,queryVec)	
+		temp2 = self.scalarMultiply(self.beta,relDocVec)
+		temp2 = self.scalarMultiply(1/float(self.numRel),relDocVec)
+		temp3 = self.scalarMultiply(self.gamma,nonRelDocVec)
+		temp3 = self.scalarMultiply(1/float(self.numNonRel),nonRelDocVec)
+		temp4 = self.subtractVectors(temp2,temp3)
+		return self.addVectors(temp1,temp4)
 	
-	def getNewQuery():
-		newQuery = scoreRocchio()
+	def getNewQuery(self):
+		newQuery = self.scoreRocchio()
 		oldQuery = self.vectors["queryWeights"]
 		
 		for i in range(len(oldQuery)):
 			if(oldQuery[i] != 0):
 				newQuery[i] = 0
 
-		terms = sort(self.keys)
+		terms = sorted(self.keys)
 		max = heapq.nlargest(2,newQuery)
-		print "New Terms : %s" %(terms[newQuery.index(max[0])],terms[newQuery.index(max[1])],)	
+		print "New Terms : {0} {1}".format(terms[newQuery.index(max[0])],terms[newQuery.index(max[1])])	
+		return terms[newQuery.index(max[0])]+' '+terms[newQuery.index(max[1])]

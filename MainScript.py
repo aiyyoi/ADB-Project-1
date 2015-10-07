@@ -4,6 +4,7 @@ import base64
 import json
 import argparse
 import VectorSpaceClass
+import ScoringSystem
 
 bingUrlBase = 'https://api.datamarket.azure.com/Bing/Search/Web?'
 bingParams = {'$top': '10', '$format': 'json'}
@@ -79,12 +80,14 @@ def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
 
 	v = VectorSpaceClass.VectorSpace(relatedList,bingParams['Query'].strip("'"))
-	for eachTerm in v.invFile:
-		print eachTerm + ': idf-'+ str(v.invFile[eachTerm].idf)
-		for eachDoc in v.invFile[eachTerm].doc_tf_dict:
-			print '   docID-'+eachDoc+ ' -locations-'+str(v.invFile[eachTerm].doc_tf_dict[eachDoc])
+	rocchio = ScoringSystem.ScoringSystem(v, 1, 0.8, 0.3)
+	new_words = rocchio.getNewQuery()
+	# for eachTerm in v.invFile:
+	# 	print eachTerm + ': idf-'+ str(v.invFile[eachTerm].idf)
+	# 	for eachDoc in v.invFile[eachTerm].doc_tf_dict:
+	# 		print '   docID-'+eachDoc+ ' -locations-'+str(v.invFile[eachTerm].doc_tf_dict[eachDoc])
 
-	bingParams['Query'] = "'new query for now'"
+	bingParams['Query'] = "'"+bingParams['Query'].strip("'")+ ' '+new_words+"'"
 	SearchAndDisplay(bingParams, nRound)
 
 
