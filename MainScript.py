@@ -78,11 +78,11 @@ def CalculateAndDecide(feedbackList, nRound):
 def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
 
-	v = VectorSpaceClass.VectorSpace(relatedList,)
+	v = VectorSpaceClass.VectorSpace(relatedList,bingParams['Query'].strip("'"))
 	for eachTerm in v.invFile:
 		print eachTerm + ': idf-'+ str(v.invFile[eachTerm].idf)
 		for eachDoc in v.invFile[eachTerm].doc_tf_dict:
-			print '   docID-'+eachDoc+ ' -tf-'+str(v.invFile[eachTerm].doc_tf_dict[eachDoc])
+			print '   docID-'+eachDoc+ ' -locations-'+str(v.invFile[eachTerm].doc_tf_dict[eachDoc])
 
 	bingParams['Query'] = "'new query for now'"
 	SearchAndDisplay(bingParams, nRound)
