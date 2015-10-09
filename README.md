@@ -1,3 +1,7 @@
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 # ADB-Project-1
 COMS 6111 Advanced Database Systems Project 1: Relevance Feedback
 
@@ -28,7 +32,7 @@ dyn-160-39-205-135:ADB-Project-1 AmyWang$ tree
 └── transcript.txt
 </code></pre>
 
-######Additional Remark: 
+######Additional Remarks: 
 1. Bing Search API accountKey is in file <code>key.json</code> and it is in the submission directory
 2. The transcript contains our results for 3 required test cases, and additional test case 'columbia' for Columbia University, 'milky way' for the candy bar, both at required precision@10 0.9
 
@@ -41,27 +45,68 @@ dyn-160-39-205-135:ADB-Project-1 AmyWang$ tree
 
 
 ## Internal Design
-Purpose of each class and the input output they need
+The three main classes used and their descriptions are as follows:
 
-&
+1. **TermParams** : This class is responsible for holding all the relevant information for a term. This includes the inverse document frequency, as well as a disctionary, whose keys are the documents containing the term and values are the corresponding positions list of the terms in the doc. The structure of the class is shown in the example below.
+<pre><code>class TermParams:
+		self.idf = 0.1
+		self.doc_pos = {"docA" : [1,2,4,22,55] , "docB" : [1,2,3,5,8]}
+</code></pre>
 
-sample of datastructure used(inverted file list, termParams, termweights vectors, etc)
+2. **VectorSpace** : This class holds the vector space representation of the current query and the entire corpus of documents (relevant and non-relevant). The class holds an inverted file and a relevance list. The inverted file holds all the terms in the vocabularies with their corresponding TermParams objects. An example is shown below:
+<pre><code>\#Inverted File
+{
+	"term1": 
+		{
+		self.idf = 0.1 
+		self.doc\_pos = {"docA" : [1,2,4,22,55] , "docB" : [1,2,3,5,8]}
+		},
+	"term2":
+		{
+		self.idf = 0.2
+		self.doc\_pos = {"docP" : [1,3,5,7], "docQ" : [2,4,6,8]
+		},
+	"term3": ...
+	"term4": ...
+	.
+	.
+	.
+	}
+</pre></code>
+
+The relevance list is a simple dictionary, with documents as keys and their user idnicated relevance as the corresponding values.
+<pre><code>\#Relevance List
+{
+	"docA" : 'y' , "docB" : 'n', ..... , "docP" : 'y', "docQ" : 'y'
+}
+</pre></code>
+
+The class also contains a method to produce the weight vectors for the documents and query using the term frequency inverse document frequency (tf-idf) scoring system.
+
+3. **ScoringSystem** : This class is reponsible for scoring the terms based on the relevance feedback from the user, and expanding the query by picking the highest scoring terms. The class contains helper methods to add, subtract and multiply sclars to lists. The main scoring method utilizes the Rocchio Algorithm as described in the next section, to reweight the terms based on the feedback. This class takes in an object of class VectorSpace, so as to obtain the document and query tf-idf weight vectors. This class also take in three additional parameters &alpha;, &beta; and &gamma; which are parameters used in the Rocchio Algorithm.
 
 
 ## Query Modification Mechanism
+In order to incoroporate the relevance feedback and expand the query with every successive iteration, we used the **Rocchio Algorithm** (Manning et al. 2009). This algorithm produces a new query term weight vector from the original query vector and the term weight vectors for the relevant and non-relevant documents according to the following equation:
 
-Inverted file list
+$$ Q_{new} = (\alpha.Q_{orig}) + \frac{1}{|D_{rel}|}sum_{D_j \epsilon D_{rel} D_j} - \frac{1}{|D_{nrel}|}sum_{D_k \epsilon D_{nrel} D_k}$$
 
-&
+Here, we subtract the normalized weights of the non-relevant documents and add the normalized weights of the relevant documents to the original query weight vectors, therefore moving the query towards the desired set of terms. The three parameters &alpha;, &beta; and &gamma; are free parameters and can be tuned as desired. For out implementation, we found the following values to be ideal:
 
-Rocchio
+<code>
+	&alpha; = 1
+	&beta; = 0.8
+	&gamma; = 0.3
+</code>
 
-&
 
-Decision on words to add and when to add two words, when to add one
+When to pick one word and when to pick two
+
 
 
 ## References
 
 1. Stop-word corpus was borrowed as-is from the NLTK toolkit.  
    Bird, Steven, Edward Loper, and Ewan Klein. "Natural Language Processing with Python." Http://www.nltk.org/nltk_data/. O'Reilly Media, n.d. Web. <http://www.nltk.org/nltk_data/>.
+   
+2. Christopher D. Manning, Prabhakar Raghavan, Hinrich Schütze: An Introduction to Information Retrieval, page 181. Cambridge University Press, 2009

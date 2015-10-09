@@ -1,18 +1,3 @@
-'''
-	Rocchio implementation to rate and rank most relevant terms
-# Input:
-#	Document titles
-#	Document descriptions
-#	Document links
-#	Document text
-#	Relevance feedback
-#
-# Output:
-#	One or Two terms to be added to query for next iteration
-
-
-'''
-
 import heapq
 
 
