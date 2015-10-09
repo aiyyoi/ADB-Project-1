@@ -18,16 +18,22 @@ class VectorSpace:
 	def getAllIndices(list,term):
 		return [i for i, x in enumerate(list) if x == term]
 
+	# Method to construct inverted file list
 	def __init__(self,docs,origQuery):
 		self.numRel = 0
 		self.numNonRel = 0
 		self.origQuery = origQuery.split()
-		self.vocab = set([]) #Build vocalbulary from title and text of all relevant documents
+		self.vocab = set([]) #Build vocalbulary from title and text of all documents
 		for d in docs:	
 			d["Title"] = d["Title"].split()
 			d["Description"] = d["Description"].split()
+			# to remove water mark like url keywords in titles and descriptions
+			# as they are noises
+			urlFilter = d['DisplayUrl'].partition('.')[2].partition('.')[0]
 			d["Title"] = map(lambda s:s.strip('.,!()[]&"').lower(), d['Title'])
+			d["Title"] = filter(lambda e: e!= urlFilter, d["Title"])
 			d["Description"] = map(lambda s:s.strip('.,!()[]&"').lower(), d["Description"])
+			d["Description"] = filter(lambda e:e!= urlFilter, d["Description"])
 			self.vocab.update(d["Title"])
 			self.vocab.update(d["Description"])
 

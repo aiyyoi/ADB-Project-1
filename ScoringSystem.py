@@ -55,5 +55,5 @@ class ScoringSystem():
 
 		terms = sorted(self.keys)
 		max = heapq.nlargest(2,newQuery)
-		print "New Terms : {0} {1}".format(terms[newQuery.index(max[0])],terms[newQuery.index(max[1])])	
-		return terms[newQuery.index(max[0])]+' '+terms[newQuery.index(max[1])]
+		print "Augment by new terms : {0}".format(terms[newQuery.index(max[0])])#,terms[newQuery.index(max[1])])	
+		return terms[newQuery.index(max[0])]#+' '+terms[newQuery.index(max[1])]

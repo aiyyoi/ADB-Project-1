@@ -72,13 +72,13 @@ def CalculateAndDecide(feedbackList, nRound):
 		print 'Precision at 0, unable to proceed'
 		exit()
 	else:
-		print 'Desired precision reached: '+ str(cur_precision)
+		print 'Desired precision reached at round '+str(nRound)+': '+ str(cur_precision)
 		exit()
 
 ###############  User Feedback and Modify Search Query    ############################
 def AnalyzeAndModify(relatedList, nRound): # might need bingParams as input
 	# Score, Rate and get those query keywords
-
+	print 'Indexing results ...'
 	v = VectorSpaceClass.VectorSpace(relatedList,bingParams['Query'].strip("'"))
 	rocchio = ScoringSystem.ScoringSystem(v, 1, 0.8, 0.3)
 	new_words = rocchio.getNewQuery()

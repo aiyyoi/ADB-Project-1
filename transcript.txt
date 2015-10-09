@@ -1,0 +1,869 @@
+dyn-160-39-205-135:ADB-Project-1 AmyWang$ python MainScript.py -q 'musk' -p 0.9
+===============
+Round 1
+Query	= 'musk'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27musk%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Elon Musk: Dieselgate Proves It's Time to Go Electric
+ URL: gizmodo.com/elon-musk-dieselgate-proves-its-time-to-go-electric...
+ Summary: Of course, that new technology Musk is referring to here is electric cars. But despite his obvious bias on the matter, the man may be onto something.
+]
+Relevant (Y/N)? y
+
+Result 2:
+[
+ Title: Elon Musk: Climate Change Will Bring Worse Refugee Crisis
+ URL: time.com/4050048/elon-musk-climate-change
+ Summary: Climate change could create a refugee crisis far worse than the one currently unfolding in Europe, Elon Musk warned Thursday. The Tesla CEO gave a speech in Berlin in ...
+]
+Relevant (Y/N)? y
+
+Result 3:
+[
+ Title: Musk - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Musk
+ Summary: Musk is a class of aromatic substances commonly used as base notes in perfumery. They include glandular secretions from animals such as the musk deer, numerous plants ...
+]
+Relevant (Y/N)? n
+
+Result 4:
+[
+ Title: Elon Musk - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Elon_Musk
+ Summary: Elon Reeve Musk (born June 28, 1971) is a South African-born Canadian-American business magnate, engineer, inventor and investor. [14] He is the CEO and CTO of SpaceX ...
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Musk | Define Musk at Dictionary.com
+ URL: dictionary.reference.com/browse/musk
+ Summary: noun 1. a substance secreted in a glandular sac under the skin of the abdomen of the male musk deer, having a strong odor, and used in perfumery. 2. an artificial ...
+]
+Relevant (Y/N)? n
+
+Result 6:
+[
+ Title: Elon Musk (@elonmusk) | Twitter
+ URL: https://twitter.com/ElonMusk
+ Summary: Elon Musk-backed SolarCity claims to have built industry's most efficient solar panel http://www. theverge.com/2015/10/2/9439 173/elon-musk-backed-solarcity-claims-to ...
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: MUSK
+ URL: https://www.facebook.com/MUSK.DISCO
+ Summary: MUSK are Lennart Döring and Gerald Zollner, who met in Berlin's nightlife back in 2009. Soon after they went through the history of dancemusic, ...
+]
+Relevant (Y/N)? n
+
+Result 8:
+[
+ Title: Musk | Definition of musk by Merriam-Webster
+ URL: www.merriam-webster.com/dictionary/musk
+ Summary: Definition of MUSK for Kids: a strong-smelling material that is used in perfumes and is obtained from a gland of an Asian deer (musk deer) or is prepared artificially
+]
+Relevant (Y/N)? n
+
+Result 9:
+[
+ Title: Musk perfume ingredient, Musk fragrance and essential oils ...
+ URL: www.fragrantica.com/notes/Musk-4.html
+ Summary: Musk is a whole class of fragrant substances used as base notes in perfumery. This wonderful animalistic note creates a groundwork on which the rest of the aromatic ...
+]
+Relevant (Y/N)? n
+
+Result 10:
+[
+ Title: Amazon.com: perfume musk: Beauty
+ URL: www.amazon.com/s?ie=UTF8&page=1&rh=n%3A3760911%2Ck%3Aperfume%20musk
+ Summary: Online shopping from a great selection at Beauty Store. ... Avany 100% Pure Uncut Alcohol Free Roll on Body Oil Perfume and Colonge, Egyptian Musk 0.33oz
+]
+Relevant (Y/N)? n
+
+===============
+FEEDBACK SUMMARY
+Query: 'musk'
+Current Precision: 0.4
+Still blow the desired precision
+Indexing results ...
+Augment by new terms : elon
+===============
+Round 2
+Query	= 'musk elon'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27musk+elon%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Elon Musk - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Elon_Musk
+ Summary: Elon Reeve Musk (born June 28, 1971) is a South African-born Canadian-American business magnate, engineer, inventor and investor. [14] He is the CEO and CTO of SpaceX ...
+]
+Relevant (Y/N)? y
+
+Result 2:
+[
+ Title: Elon Musk - Forbes
+ URL: www.forbes.com/profile/elon-musk
+ Summary: Elon Musk's meteoric ride hit a speed bump in June when one of his SpaceX rockets, on its way to resupply the International Space Station, exploded two minutes into ...
+]
+Relevant (Y/N)? y
+
+Result 3:
+[
+ Title: Elon Musk - CNBC
+ URL: www.cnbc.com/elon-musk
+ Summary: Tesla Motors CEO Elon Musk introduces the first of the company's long-awaited Model X electric sports-utility (SUV) vehicles.
+]
+Relevant (Y/N)? y
+
+Result 4:
+[
+ Title: Elon Musk (@elonmusk) | Twitter
+ URL: https://twitter.com/ElonMusk
+ Summary: Elon Musk-backed SolarCity claims to have built industry's most efficient solar panel http://www. theverge.com/2015/10/2/9439 173/elon-musk-backed-solarcity-claims-to ...
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Elon Musk - Engineer, Inventor, Explorer - Biography.com
+ URL: www.biography.com/people/elon-musk-20837159
+ Summary: Elon Musk is an entrepreneur known for co-founding Tesla Motors, X.com—which later became PayPal—and SpaceX, the last of which launched a landmark commercial ...
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: Elon Musk: If You Don't Make It at Tesla, You Go Work at ...
+ URL: www.macrumors.com/2015/10/08/elon-musk-apple-hires-fired-tesla-workers
+ Summary: In a new interview with German newspaper Handelsblatt (via Business Insider), Tesla CEO Elon Musk spoke about his thoughts on the much-rumored Apple Car.
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: Elon Musk | Speaker | TED.com
+ URL: www.ted.com/speakers/elon_musk
+ Summary: Why you should listen. Elon Musk is the chief designer for SpaceX, overseeing development of rockets and spacecraft for missions to Earth orbit and ultimately to ...
+]
+Relevant (Y/N)? y
+
+Result 8:
+[
+ Title: Chanos got China right. Now he's betting against Elon Musk ...
+ URL: money.cnn.com/2015/10/08/investing/jim-chanos-china-elon-musk/...
+ Summary: Jim Chanos, who correctly realized China's economy was in trouble, is betting against casinos, commodity companies and Elon Musk's SolarCity.
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: elon musk: Pictures, Videos, Breaking News
+ URL: www.huffingtonpost.com/news/elon-musk
+ Summary: Big News on elon musk. Includes blogs, news, and community conversations about elon musk.
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: Is Elon Musk the Next Bugsy Siegel? - Bloomberg Business
+ URL: www.bloomberg.com/news/articles/2015-10-07/is-elon-musk-the-next...
+ Summary: Elon Musk’s Tesla Motors Inc’s new battery plant in Nevada may do what mobster Bugsy Siegel did for the state back in the 1940s: Spark a new industry ...
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'musk elon'
+Current Precision: 1.0
+Desired precision reached at round 2: 1.0
+
+
+
+dyn-160-39-205-135:ADB-Project-1 AmyWang$ python MainScript.py -q 'gates' -p 0.9
+===============
+Round 1
+Query	= 'gates'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27gates%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Gates Corporation
+ URL: www.gates.com
+ Summary: Gates Corporation is Powering Progress™ in the Oil & Gas, Energy, Mining, Marine, Agriculture, Transportation and Automotive Industries.
+]
+Relevant (Y/N)? n
+
+Result 2:
+[
+ Title: Driveway Gates | Automatic Gates | Electric Gates
+ URL: www.gatecrafters.com/design_your_gates.aspx
+ Summary: Driveway Gates - Automatic Gates The high-quality driveway gates from GateCrafters.com come in a wide variety of options to ...
+]
+Relevant (Y/N)? n
+
+Result 3:
+[
+ Title: Gates Bar B.Q.
+ URL: www.gatesbbq.com
+ Summary: With the tantalizing hickory barbecue smell drawing the customer through the ranch-style doors, he is immediately greeted.
+]
+Relevant (Y/N)? n
+
+Result 4:
+[
+ Title: Bill Gates - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Bill_Gates
+ Summary: William Henry "Bill" Gates III (born October 28, 1955) is an American business magnate, philanthropist, investor, computer programmer, and inventor. In 1975, Gates co ...
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Bill Gates
+ URL: https://www.facebook.com/BillGates
+ Summary: Bill Gates is on Facebook. To connect with Bill Gates, sign up for Facebook today. Sign Up Log In. Bill Gates. Public Figure. Public Cancel Save Changes. Bill Gates.
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: Gates - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Gates
+ Summary: Gates may refer to: Contents 1 People 2 Places 3 Art and entertainment 4 See also People Gates (surname) Gates Brown, American baseball player Gates McFadden ...
+]
+Relevant (Y/N)? n
+
+Result 7:
+[
+ Title: Amazon.com: gates
+ URL: www.amazon.com/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3Agates
+ Summary: Product Features Expands to become a 192-inch wall mounted gate or free standing barrier
+]
+Relevant (Y/N)? n
+
+Result 8:
+[
+ Title: Bill Gates - Forbes
+ URL: www.forbes.com/profile/bill-gates
+ Summary: Forty years ago, when Bill Gates and Paul Allen launched Microsoft, Gates' goal of getting a computer on every person's desk seemed audacious.
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: Bill & Melinda Gates Foundation
+ URL: www.gatesfoundation.org
+ Summary: The Gates Foundation’s effort to eradicate polio offers the chance to protect millions of children from paralysis forever.
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: Amazon.com: Gates & Doorways: Baby Products
+ URL: www.amazon.com/b?ie=UTF8&node=166868011
+ Summary: Online shopping for Gates & Doorways from a great selection at Baby Products Store.
+]
+Relevant (Y/N)? n
+
+===============
+FEEDBACK SUMMARY
+Query: 'gates'
+Current Precision: 0.4
+Still blow the desired precision
+Indexing results ...
+Augment by new terms : bill
+===============
+Round 2
+Query	= 'gates bill'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27gates+bill%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Bill Gates - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Bill_Gates
+ Summary: William Henry "Bill" Gates III (born October 28, 1955) is an American business magnate, philanthropist, investor, computer programmer, and inventor. In 1975, Gates co ...
+]
+Relevant (Y/N)? y
+
+Result 2:
+[
+ Title: Bill Gates - Forbes
+ URL: www.forbes.com/profile/bill-gates
+ Summary: Forty years ago, when Bill Gates and Paul Allen launched Microsoft, Gates' goal of getting a computer on every person's desk seemed audacious.
+]
+Relevant (Y/N)? y
+
+Result 3:
+[
+ Title: Bill Gates - Business Leader, Entrepreneur, Philanthropist ...
+ URL: www.biography.com/people/bill-gates-9307520
+ Summary: Entrepreneur Bill Gates founded the world's largest software business, Microsoft, with Paul Allen, and subsequently became one of the richest men in the world.
+]
+Relevant (Y/N)? y
+
+Result 4:
+[
+ Title: Home | Bill Gates
+ URL: www.gatesnotes.com
+ Summary: This is my personal blog, where I share about the people I meet, the books I'm reading, and what I'm learning. I hope that you'll join the conversation.
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Bill Gates - CNBC
+ URL: www.cnbc.com/bill-gates
+ Summary: NEW YORK, Sept 25- The Bill& Melinda Gates Foundation Trust has sued Brazil's Petrobras to recoup stock losses stemming from a corruption scandal at the state-run oil ...
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: Bill Gates (@BillGates) | Twitter
+ URL: https://twitter.com/billgates
+ Summary: 1,810 tweets • 500 photos/videos • 25M followers. "Could computer modeling and machine learning help prevent the next epidemic? http://t.co/cSmnt1SD5w @IEEESpectrum"
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: Bill Gates
+ URL: https://www.facebook.com/BillGates
+ Summary: Bill Gates is on Facebook. To connect with Bill Gates, sign up for Facebook today. Sign Up Log In. Bill Gates. Public Figure. Public Cancel Save Changes. Bill Gates.
+]
+Relevant (Y/N)? y
+
+Result 8:
+[
+ Title: Bill & Melinda Gates Foundation
+ URL: www.gatesfoundation.org
+ Summary: The Gates Foundation’s effort to eradicate polio offers the chance to protect millions of children from paralysis forever.
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: Bill Gates buys Jenny Craig's Rancho Santa Fe horse farm ...
+ URL: www.latimes.com/.../la-fi-hotprop-bill-gates-20141009-story.html
+ Summary: Microsoft co-founder Bill Gates has bought Jenny Craig’s upscale horse facility in Rancho Santa Fe for $18 million, the Los Angeles Times has confirmed. The 228 ...
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: Bill Gates Keynote: Microsoft Tech•Ed 2008 — Developers ...
+ URL: news.microsoft.com/2008/06/03/bill-gates-keynote-microsoft-tech...
+ Summary: BILL GATES: Good morning and welcome to Tech•Ed. This is the first year that we broke Tech•Ed into two sections, the section this week, which is just ...
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'gates bill'
+Current Precision: 1.0
+Desired precision reached at round 2: 1.0
+
+
+
+dyn-160-39-205-135:ADB-Project-1 AmyWang$ python MainScript.py -q 'taj mahal' -p 0.9
+===============
+Round 1
+Query	= 'taj mahal'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Taj Mahal - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal
+ Summary: The Taj Mahal is a white marble mausoleum located on the southern bank of the Yamuna River in the Indian city of Agra. It was commissioned in 1632 by the Mughal ...
+]
+Relevant (Y/N)? n
+
+Result 2:
+[
+ Title: The Taj Mahal - Facts & Summary - HISTORY.com
+ URL: www.history.com/topics/taj-mahal
+ Summary: Find out more about the history of The Taj Mahal, including videos, interesting articles, pictures, historical features and more. Get all the facts on HISTORY.com
+]
+Relevant (Y/N)? n
+
+Result 3:
+[
+ Title: Atlantic City New Jersey Casino Hotels | Trump Taj Mahal ...
+ URL: www.trumptaj.com
+ Summary: For five star Atlantic City Casino hotels, Trump Taj Mahal Casino Hotel offers restaurants, nightlife and a casino floor you can't resist. Explore our Atlantic City ...
+]
+Relevant (Y/N)? n
+
+Result 4:
+[
+ Title: Welcome To Official WebSite of Taj Mahal-U.P.Tourism
+ URL: tajmahal.gov.in
+ Summary: Official website by Department of Tourism, Government of Uttar Pradesh. Details about Taj Mahal, ticketing, tours, and tourist information.
+]
+Relevant (Y/N)? n
+
+Result 5:
+[
+ Title: Taj Mahal India
+ URL: www.tajmahal.com
+ Summary: Taj Mahal, Taj Mahal history, taj mahal location, pictures, information, taj mahal tours, tickets and packages. Taj Mahal India
+]
+Relevant (Y/N)? n
+
+Result 6:
+[
+ Title: An International Treasure - Taj Mahal
+ URL: www.tajblues.com
+ Summary: Official site includes news, tour schedule, discography, audio/video and pictures.
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
+ URL: www.allmusic.com/artist/taj-mahal-mn0000790604
+ Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+]
+Relevant (Y/N)? y
+
+Result 8:
+[
+ Title: Taj Mahal — Free listening, videos, concerts, stats and ...
+ URL: www.last.fm/music/Taj+Mahal
+ Summary: Taj Mahal (born Henry Saint Clair Fredericks in New York City on May 17, 1942) is an American Grammy Award-winning blues musician who incorporates elements of world ...
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: Amazon.com: Taj Mahal: Songs, Albums, Pictures, Bios
+ URL: www.amazon.com/Taj-Mahal/e/B000APY7PY
+ Summary: Visit Amazon.com's Taj Mahal Store to shop for Taj Mahal albums (CD, MP3, Vinyl), concert tickets, and other Taj Mahal-related products (DVDs, Books, T-shirts). Also ...
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
+ Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'taj mahal'
+Current Precision: 0.5
+Still blow the desired precision
+Indexing results ...
+Augment by new terms : albums
+===============
+Round 2
+Query	= 'taj mahal albums'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal+albums%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Amazon.com: Taj Mahal: Songs, Albums, Pictures, Bios
+ URL: www.amazon.com/Taj-Mahal/e/B000APY7PY
+ Summary: Visit Amazon.com's Taj Mahal Store to shop for Taj Mahal albums (CD, MP3, Vinyl), concert tickets, and other Taj Mahal-related products (DVDs, Books, T-shirts). Also ...
+]
+Relevant (Y/N)? y
+
+Result 2:
+[
+ Title: Taj Mahal Discography at Discogs
+ URL: www.discogs.com/artist/15158-Taj-Mahal
+ Summary: Complete your Taj Mahal record collection. Discover Taj Mahal's full discography. Shop new and used Vinyl and CDs.
+]
+Relevant (Y/N)? y
+
+Result 3:
+[
+ Title: Taj Mahal (album) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal_(album)
+ Summary: Taj Mahal is the debut American blues album by Taj Mahal.
+]
+Relevant (Y/N)? y
+
+Result 4:
+[
+ Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
+ Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Taj Mahal | Album Discography | AllMusic
+ URL: www.allmusic.com/artist/taj-mahal-mn0000790604/discography
+ Summary: Find Taj Mahal discography, albums and singles on AllMusic
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: Taj Mahal Latest Albums | MTV
+ URL: www.mtv.com/artists/taj-mahal/discography
+ Summary: Taj Mahal Latest Albums. Get the MTV Artists App and discover music wherever you are. Taj Mahal Discography. ... Taj (1987) Gramavision Records 24. Now ...
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: Taj Mahal : Best Ever Albums
+ URL: www.besteveralbums.com/thechart.php?b=4439
+ Summary: What are the best albums by Taj Mahal? BestEverAlbums.com brings together thousands of 'greatest ever album' charts and calculates an overall ranking.
+]
+Relevant (Y/N)? y
+
+Result 8:
+[
+ Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
+ URL: www.allmusic.com/artist/taj-mahal-mn0000790604
+ Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: Discography - Taj Mahal
+ URL: www.tajblues.com/discography
+ Summary: 7 Discography - Taj Mahal page page-id-7 page-template page-template-tpl-discography ... “Live Catch” places you “front row and center” with The Taj Mahal Trio.
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: TAJ MAHAL - Taj Mahal [Vinyl] - Amazon.com Music
+ URL: www.amazon.com/Taj-Mahal-Vinyl-TAJ-MAHAL/dp/B000B6TR9I
+ Summary: It's hard to believe that 40 years have elapsed since Taj Mahal recorded his self-titled album. I can honestly say that Taj's debut album DID change my life because ...
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'taj mahal albums'
+Current Precision: 1.0
+Desired precision reached at round 2: 1.0
+
+
+
+dyn-160-39-205-135:ADB-Project-1 AmyWang$ python MainScript.py -q 'taj mahal' -p 0.9
+===============
+Round 1
+Query	= 'taj mahal'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Taj Mahal - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal
+ Summary: The Taj Mahal is a white marble mausoleum located on the southern bank of the Yamuna River in the Indian city of Agra. It was commissioned in 1632 by the Mughal ...
+]
+Relevant (Y/N)? n
+
+Result 2:
+[
+ Title: The Taj Mahal - Facts & Summary - HISTORY.com
+ URL: www.history.com/topics/taj-mahal
+ Summary: Find out more about the history of The Taj Mahal, including videos, interesting articles, pictures, historical features and more. Get all the facts on HISTORY.com
+]
+Relevant (Y/N)? n
+
+Result 3:
+[
+ Title: Atlantic City New Jersey Casino Hotels | Trump Taj Mahal ...
+ URL: www.trumptaj.com
+ Summary: For five star Atlantic City Casino hotels, Trump Taj Mahal Casino Hotel offers restaurants, nightlife and a casino floor you can't resist. Explore our Atlantic City ...
+]
+Relevant (Y/N)? n
+
+Result 4:
+[
+ Title: Welcome To Official WebSite of Taj Mahal-U.P.Tourism
+ URL: tajmahal.gov.in
+ Summary: Official website by Department of Tourism, Government of Uttar Pradesh. Details about Taj Mahal, ticketing, tours, and tourist information.
+]
+Relevant (Y/N)? n
+
+Result 5:
+[
+ Title: Taj Mahal India
+ URL: www.tajmahal.com
+ Summary: Taj Mahal, Taj Mahal history, taj mahal location, pictures, information, taj mahal tours, tickets and packages. Taj Mahal India
+]
+Relevant (Y/N)? n
+
+Result 6:
+[
+ Title: An International Treasure - Taj Mahal
+ URL: www.tajblues.com
+ Summary: Official site includes news, tour schedule, discography, audio/video and pictures.
+]
+Relevant (Y/N)? n
+
+Result 7:
+[
+ Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
+ URL: www.allmusic.com/artist/taj-mahal-mn0000790604
+ Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+]
+Relevant (Y/N)? n
+
+Result 8:
+[
+ Title: Taj Mahal — Free listening, videos, concerts, stats and ...
+ URL: www.last.fm/music/Taj+Mahal
+ Summary: Taj Mahal (born Henry Saint Clair Fredericks in New York City on May 17, 1942) is an American Grammy Award-winning blues musician who incorporates elements of world ...
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: Amazon.com: Taj Mahal: Songs, Albums, Pictures, Bios
+ URL: www.amazon.com/Taj-Mahal/e/B000APY7PY
+ Summary: Visit Amazon.com's Taj Mahal Store to shop for Taj Mahal albums (CD, MP3, Vinyl), concert tickets, and other Taj Mahal-related products (DVDs, Books, T-shirts). Also ...
+]
+Relevant (Y/N)? n
+
+Result 10:
+[
+ Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
+ Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'taj mahal'
+Current Precision: 0.2
+Still blow the desired precision
+Indexing results ...
+Augment by new terms : musician
+===============
+Round 2
+Query	= 'taj mahal musician'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal+musician%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: An International Treasure - Taj Mahal
+ URL: www.tajblues.com
+ Summary: TAJ MAHAL Accepts Lifetime Achievement Award from Americana Music Association. September 18, 2014. Taj Mahal accepted the Lifetime Achievement Award from the ...
+]
+Relevant (Y/N)? y
+
+Result 2:
+[
+ Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
+ Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
+]
+Relevant (Y/N)? y
+
+Result 3:
+[
+ Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
+ URL: www.allmusic.com/artist/taj-mahal-mn0000790604
+ Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+]
+Relevant (Y/N)? n
+
+Result 4:
+[
+ Title: Discography - Taj Mahal
+ URL: www.tajblues.com/discography
+ Summary: The latest in musical explorations for The Taj Mahal Trio. The Taj Mahal Trio: Taj Mahal (vocals, guitar, ... Hidden Treasures of Taj Mahal. 2012 Sony Music
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Taj Mahal - YouTube
+ URL: www.youtube.com/user/TajMahalMusic
+ Summary: Welcome to a world of fun and fantasy where kids would love to be & parents can set them free! HooplaKidz is one of the most popular YouTube channels for preschoolers ...
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: Taj Mahal - Taj Mahal - Amazon.com Music
+ URL: www.amazon.com/Taj-Mahal/dp/B00004XSUW
+ Summary: Amazon.com. Taj Mahal's been chasing the blues around the world for years, but rarely with the passion, energy, and clarity he brought to his first three albums.
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: Taj Mahal — Free listening, videos, concerts, stats and ...
+ URL: www.last.fm/music/Taj+Mahal
+ Summary: Taj Mahal (born Henry Saint Clair Fredericks in New York City on May 17, 1942) is an American Grammy Award-winning blues musician who incorporates elements of world ...
+]
+Relevant (Y/N)? y
+
+Result 8:
+[
+ Title: Taj Mahal
+ URL: https://www.facebook.com/tajmahal
+ Summary: Taj Mahal is excited to present to the public for the first time prints from original etching Natch'l Blues! The Natch’l Blues prints are hand rolled ...
+]
+Relevant (Y/N)? n
+
+Result 9:
+[
+ Title: Taj Mahal's Songs | Stream Online Music Songs | Listen ...
+ URL: https://myspace.com/tajblues/music
+ Summary: Taj Mahal's songs: Listen to songs by Taj Mahal on Myspace, Stream Free Online Music by Taj Mahal
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: Taj Mahal | Listen and Stream Free Music, Albums, New ...
+ URL: https://myspace.com/tajblues
+ Summary: Taj Mahal's profile including the latest music, albums, songs, music videos and more updates.
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'taj mahal musician'
+Current Precision: 0.8
+Still blow the desired precision
+Indexing results ...
+Augment by new terms : songs
+===============
+Round 3
+Query	= 'taj mahal musician songs'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal+musician+songs%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Taj Mahal's Songs | Stream Online Music Songs | Listen ...
+ URL: https://myspace.com/tajblues/music
+ Summary: Taj Mahal's songs: Listen to songs by Taj Mahal on Myspace, Stream Free Online Music by Taj Mahal
+]
+Relevant (Y/N)? y
+
+Result 2:
+[
+ Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
+ URL: www.allmusic.com/artist/taj-mahal-mn0000790604
+ Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+]
+Relevant (Y/N)? y
+
+Result 3:
+[
+ Title: TAJ MAHAL - The Best Of Taj Mahal - Amazon.com Music
+ URL: www.amazon.com/The-Best-Of-Taj-Mahal/dp/B00004XSUS
+ Summary: I had heard the name, Taj Mahal over the years but never took the time to investigate his music. Then one day while listening to the radio, the song "Fishing Blues ...
+]
+Relevant (Y/N)? y
+
+Result 4:
+[
+ Title: SecondSpin - Music / Taj Mahal
+ URL: www.secondspin.com/stores/ss/browse-music-by-artist.jsp?productId=...
+ Summary: The Internet's largest buyer and seller of used CDs, used DVDs, used Blu-rays, and used Video Games. Choose from a huge selection of used CDs, used DVDs, used Blu ...
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Discography - Taj Mahal
+ URL: www.tajblues.com/discography
+ Summary: At it’s very core it is the existing universal language of music. Some songs are new and ... The latest in musical explorations for The Taj Mahal Trio. The Taj ...
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
+ Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: Taj Mahal — Free listening, videos, concerts, stats and ...
+ URL: www.last.fm/music/Taj+Mahal
+ Summary: Taj Mahal (born Henry Saint Clair Fredericks in New York City on May 17, 1942) is an American Grammy Award-winning blues musician who incorporates elements of world ...
+]
+Relevant (Y/N)? y
+
+Result 8:
+[
+ Title: Taj Mahal - YouTube
+ URL: www.youtube.com/user/TajMahalMusic
+ Summary: Welcome to a world of fun and fantasy where kids would love to be & parents can set them free! HooplaKidz is one of the most popular YouTube channels for preschoolers ...
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: Taj Mahal :: Music in North Carolina :: Out and About at ...
+ URL: www.wral.com/Music/Taj-Mahal/14944715
+ Summary: A bonafide blues and rock legend, the inimitable Taj Mahal has been instrumental in preserving and shaping American roots music. With his booming baritone, nimble ...
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: An International Treasure - Taj Mahal
+ URL: www.tajblues.com
+ Summary: TAJ MAHAL Accepts Lifetime Achievement Award from Americana Music Association. September 18, 2014. Taj Mahal accepted the Lifetime Achievement Award from the ...
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'taj mahal musician songs'
+Current Precision: 1.0
+Desired precision reached at round 3: 1.0
