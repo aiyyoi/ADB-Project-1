@@ -51,7 +51,7 @@ class ScoringSystem():
 			print "Augment by new terms : {0} {1}".format(terms[indices[0]],terms[indices[1]])	
 			return terms[indices[0]]+ ' '+ terms[indices[1]]
 		else:
-			if abs(max[0]-max[1])< 0.05:
+			if abs(max[0]-max[1])< 0.02:
 				print "Augment by new terms : {0} {1}".format(terms[newQuery.index(max[0])],terms[newQuery.index(max[1])])	
 				return terms[newQuery.index(max[0])]+' '+terms[newQuery.index(max[1])]
 			else:
