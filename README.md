@@ -101,7 +101,7 @@ Here, we subtract the normalized weights of the non-relevant documents and add t
 
 Once the new query vector is calculated, we then pick the new highest scoring terms that are not present in the original query. These terms are then appended to the query to produce the final expanded query.
 
-One last decision to make before augment original query with new highest scoring tesms is to decide if the top two terms should be added or one. We decided to compare the weighted scores of the top two terms, if their absolute difference is within a small threshold ( <code><0.0001</code>), they are both considered highly relevant and will be augmented into new query for next round. Otherwise, only the top one term will be augmented. In our test case for 'columbia', this mechanism can make sure both 'new' and 'york' are added for next round, instead of appending the single word 'new' that does not make sense for information retrieval, and would not overshoot by appending two words for every round in other cases.
+One last decision to make before augment original query with new highest scoring tesms is to decide if the top two terms should be added or one. We decided to compare the weighted scores of the top two terms, if their absolute difference is within a small threshold ( <code><0.05</code>), they are both considered highly relevant and will be augmented into new query for next round. Otherwise, only the top one term will be augmented. In our test case for 'columbia', this mechanism can make sure both 'new' and 'york' are added for next round, instead of appending the single word 'new' that does not make sense for information retrieval, and would not overshoot by appending two words for every round in other cases.
 
 
 
