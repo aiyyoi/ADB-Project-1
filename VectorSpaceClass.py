@@ -30,9 +30,9 @@ class VectorSpace:
 			# to remove water mark like url keywords in titles and descriptions
 			# as they are noises
 			urlFilter = d['DisplayUrl'].partition('.')[2].partition('.')[0]
-			d["Title"] = map(lambda s:s.strip('.,!()[]&"').lower(), d['Title'])
+			d["Title"] = map(lambda s:s.strip('.,!()[]&" |').lower(), d['Title'])
 			d["Title"] = filter(lambda e: e!= urlFilter, d["Title"])
-			d["Description"] = map(lambda s:s.strip('.,!()[]&"').lower(), d["Description"])
+			d["Description"] = map(lambda s:s.strip('.,!()[]&" |').lower(), d["Description"])
 			d["Description"] = filter(lambda e:e!= urlFilter, d["Description"])
 			self.vocab.update(d["Title"])
 			self.vocab.update(d["Description"])

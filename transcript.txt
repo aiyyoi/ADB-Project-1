@@ -66,25 +66,25 @@ Relevant (Y/N)? n
 
 Result 8:
 [
- Title: Musk | Definition of musk by Merriam-Webster
- URL: www.merriam-webster.com/dictionary/musk
- Summary: Definition of MUSK for Kids: a strong-smelling material that is used in perfumes and is obtained from a gland of an Asian deer (musk deer) or is prepared artificially
-]
-Relevant (Y/N)? n
-
-Result 9:
-[
  Title: Musk perfume ingredient, Musk fragrance and essential oils ...
  URL: www.fragrantica.com/notes/Musk-4.html
  Summary: Musk is a whole class of fragrant substances used as base notes in perfumery. This wonderful animalistic note creates a groundwork on which the rest of the aromatic ...
 ]
 Relevant (Y/N)? n
 
-Result 10:
+Result 9:
 [
  Title: Amazon.com: perfume musk: Beauty
  URL: www.amazon.com/s?ie=UTF8&page=1&rh=n%3A3760911%2Ck%3Aperfume%20musk
  Summary: Online shopping from a great selection at Beauty Store. ... Avany 100% Pure Uncut Alcohol Free Roll on Body Oil Perfume and Colonge, Egyptian Musk 0.33oz
+]
+Relevant (Y/N)? n
+
+Result 10:
+[
+ Title: Musk | Definition of musk by Merriam-Webster
+ URL: www.merriam-webster.com/dictionary/musk
+ Summary: Definition of MUSK for Kids: a strong-smelling material that is used in perfumes and is obtained from a gland of an Asian deer (musk deer) or is prepared artificially
 ]
 Relevant (Y/N)? n
 
@@ -94,7 +94,7 @@ Query: 'musk'
 Current Precision: 0.4
 Still blow the desired precision
 Indexing results ...
-Augment by new terms : elon
+Augment by new term: elon
 ===============
 Round 2
 Query	= 'musk elon'
@@ -244,17 +244,17 @@ Relevant (Y/N)? y
 
 Result 6:
 [
- Title: Gates - Wikipedia, the free encyclopedia
- URL: en.wikipedia.org/wiki/Gates
- Summary: Gates may refer to: Contents 1 People 2 Places 3 Art and entertainment 4 See also People Gates (surname) Gates Brown, American baseball player Gates McFadden ...
+ Title: Amazon.com: gates
+ URL: www.amazon.com/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3Agates
+ Summary: Product Features Expands to become a 192-inch wall mounted gate or free standing barrier
 ]
 Relevant (Y/N)? n
 
 Result 7:
 [
- Title: Amazon.com: gates
- URL: www.amazon.com/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3Agates
- Summary: Product Features Expands to become a 192-inch wall mounted gate or free standing barrier
+ Title: Gates - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Gates
+ Summary: Gates may refer to: Contents 1 People 2 Places 3 Art and entertainment 4 See also People Gates (surname) Gates Brown, American baseball player Gates McFadden ...
 ]
 Relevant (Y/N)? n
 
@@ -288,7 +288,7 @@ Query: 'gates'
 Current Precision: 0.4
 Still blow the desired precision
 Indexing results ...
-Augment by new terms : bill
+Augment by new term: bill
 ===============
 Round 2
 Query	= 'gates bill'
@@ -383,6 +383,7 @@ FEEDBACK SUMMARY
 Query: 'gates bill'
 Current Precision: 1.0
 Desired precision reached at round 2: 1.0
+
 
 
 
@@ -482,41 +483,17 @@ Query: 'taj mahal'
 Current Precision: 0.5
 Still blow the desired precision
 Indexing results ...
-Augment by new terms : albums
+Augment by new terms : albums musician
 ===============
 Round 2
-Query	= 'taj mahal albums'
+Query	= 'taj mahal albums musician'
 Precision	= 0.9
-URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal+albums%27
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal+albums+musician%27
 Total no. of results : 10
 Bing Search Results: 
 ===============
 
 Result 1:
-[
- Title: Amazon.com: Taj Mahal: Songs, Albums, Pictures, Bios
- URL: www.amazon.com/Taj-Mahal/e/B000APY7PY
- Summary: Visit Amazon.com's Taj Mahal Store to shop for Taj Mahal albums (CD, MP3, Vinyl), concert tickets, and other Taj Mahal-related products (DVDs, Books, T-shirts). Also ...
-]
-Relevant (Y/N)? y
-
-Result 2:
-[
- Title: Taj Mahal Discography at Discogs
- URL: www.discogs.com/artist/15158-Taj-Mahal
- Summary: Complete your Taj Mahal record collection. Discover Taj Mahal's full discography. Shop new and used Vinyl and CDs.
-]
-Relevant (Y/N)? y
-
-Result 3:
-[
- Title: Taj Mahal (album) - Wikipedia, the free encyclopedia
- URL: en.wikipedia.org/wiki/Taj_Mahal_(album)
- Summary: Taj Mahal is the debut American blues album by Taj Mahal.
-]
-Relevant (Y/N)? y
-
-Result 4:
 [
  Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
  URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
@@ -524,7 +501,7 @@ Result 4:
 ]
 Relevant (Y/N)? y
 
-Result 5:
+Result 2:
 [
  Title: Taj Mahal | Album Discography | AllMusic
  URL: www.allmusic.com/artist/taj-mahal-mn0000790604/discography
@@ -532,35 +509,59 @@ Result 5:
 ]
 Relevant (Y/N)? y
 
+Result 3:
+[
+ Title: Amazon.com: Taj Mahal: Songs, Albums, Pictures, Bios
+ URL: www.amazon.com/Taj-Mahal/e/B000APY7PY
+ Summary: Visit Amazon.com's Taj Mahal Store to shop for Taj Mahal albums (CD, MP3, Vinyl), concert tickets, and other Taj Mahal-related products (DVDs, Books, T-shirts). Also ...
+]
+Relevant (Y/N)? y
+
+Result 4:
+[
+ Title: Taj Mahal (musician) live albums
+ URL: www.naturalgeographicmagazine.com/q/Taj_Mahal_(musician)_live_albums
+ Summary: The Real Thing (Taj Mahal album) The Real Thing is a 1971 live album by Taj Mahal. It was recorded on February 13, 1971 at the Fillmore East in New York City and ...
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Taj Mahal Discography at Discogs
+ URL: www.discogs.com/artist/15158-Taj-Mahal
+ Summary: Complete your Taj Mahal record collection. Discover Taj Mahal's full discography. Shop new and used Vinyl and CDs.
+]
+Relevant (Y/N)? y
+
 Result 6:
 [
- Title: Taj Mahal Latest Albums | MTV
- URL: www.mtv.com/artists/taj-mahal/discography
- Summary: Taj Mahal Latest Albums. Get the MTV Artists App and discover music wherever you are. Taj Mahal Discography. ... Taj (1987) Gramavision Records 24. Now ...
+ Title: Discography - Taj Mahal
+ URL: www.tajblues.com/discography
+ Summary: Rhino Records’ Hippity Hop collection features hip-hop music for a younger audience. The album ... The latest in musical explorations for The Taj Mahal Trio ...
 ]
 Relevant (Y/N)? y
 
 Result 7:
 [
- Title: Taj Mahal : Best Ever Albums
- URL: www.besteveralbums.com/thechart.php?b=4439
- Summary: What are the best albums by Taj Mahal? BestEverAlbums.com brings together thousands of 'greatest ever album' charts and calculates an overall ranking.
+ Title: Taj Mahal | Listen and Stream Free Music, Albums, New ...
+ URL: https://myspace.com/tajblues
+ Summary: Taj Mahal's profile including the latest music, albums, songs, music videos and more updates.
 ]
 Relevant (Y/N)? y
 
 Result 8:
 [
- Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
- URL: www.allmusic.com/artist/taj-mahal-mn0000790604
- Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+ Title: Taj Mahal - Dancing The Blues (CD, Album) at Discogs
+ URL: www.discogs.com/Taj-Mahal-Dancing-The-Blues/release/7554815
+ Summary: Find a Taj Mahal - Dancing The Blues first pressing or reissue. Complete your Taj Mahal collection. Shop Vinyl and CDs.
 ]
 Relevant (Y/N)? y
 
 Result 9:
 [
- Title: Discography - Taj Mahal
- URL: www.tajblues.com/discography
- Summary: 7 Discography - Taj Mahal page page-id-7 page-template page-template-tpl-discography ... “Live Catch” places you “front row and center” with The Taj Mahal Trio.
+ Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
+ URL: www.allmusic.com/artist/taj-mahal-mn0000790604
+ Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
 ]
 Relevant (Y/N)? y
 
@@ -574,296 +575,296 @@ Relevant (Y/N)? y
 
 ===============
 FEEDBACK SUMMARY
-Query: 'taj mahal albums'
+Query: 'taj mahal albums musician'
 Current Precision: 1.0
 Desired precision reached at round 2: 1.0
 
 
 
-dyn-160-39-205-135:ADB-Project-1 AmyWang$ python MainScript.py -q 'taj mahal' -p 0.9
+dyn-160-39-205-135:ADB-Project-1 AmyWang$ python MainScript.py -q 'columbia' -p 0.9
 ===============
 Round 1
-Query	= 'taj mahal'
+Query	= 'columbia'
 Precision	= 0.9
-URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal%27
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27columbia%27
 Total no. of results : 10
 Bing Search Results: 
 ===============
 
 Result 1:
 [
- Title: Taj Mahal - Wikipedia, the free encyclopedia
- URL: en.wikipedia.org/wiki/Taj_Mahal
- Summary: The Taj Mahal is a white marble mausoleum located on the southern bank of the Yamuna River in the Indian city of Agra. It was commissioned in 1632 by the Mughal ...
+ Title: Columbia - Outdoor Clothing, Outdoor Footwear ...
+ URL: www.columbia.com
+ Summary: Shop direct from Columbia Sportswear. Buy Columbia jackets, pants, shirts, fleece, shoes, boots & sweaters. Visit our blog, watch videos & meet our athletes.
 ]
 Relevant (Y/N)? n
 
 Result 2:
 [
- Title: The Taj Mahal - Facts & Summary - HISTORY.com
- URL: www.history.com/topics/taj-mahal
- Summary: Find out more about the history of The Taj Mahal, including videos, interesting articles, pictures, historical features and more. Get all the facts on HISTORY.com
+ Title: Colombia - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Colombia
+ Summary: Colombia was the first constitutional government in South America, and the Liberal and Conservative parties, founded in 1848 and 1849 respectively, are two of the ...
 ]
 Relevant (Y/N)? n
 
 Result 3:
 [
- Title: Atlantic City New Jersey Casino Hotels | Trump Taj Mahal ...
- URL: www.trumptaj.com
- Summary: For five star Atlantic City Casino hotels, Trump Taj Mahal Casino Hotel offers restaurants, nightlife and a casino floor you can't resist. Explore our Atlantic City ...
+ Title: Columbia University in the City of New York
+ URL: www.columbia.edu
+ Summary: Founded in 1754 as King's College by royal charter, it is the oldest institution of higher learning in the State of New York. Located in New York City and a member of ...
 ]
-Relevant (Y/N)? n
+Relevant (Y/N)? y
 
 Result 4:
 [
- Title: Welcome To Official WebSite of Taj Mahal-U.P.Tourism
- URL: tajmahal.gov.in
- Summary: Official website by Department of Tourism, Government of Uttar Pradesh. Details about Taj Mahal, ticketing, tours, and tourist information.
+ Title: Columbia - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Columbia
+ Summary: Columbia may refer to: Contents 1 Places 1.1 In North America 1.2 Elsewhere 1.3 In fiction 2 Companies 2.1 Music and entertainment 2.2 Other 3 Music 4 People 5 ...
 ]
 Relevant (Y/N)? n
 
 Result 5:
 [
- Title: Taj Mahal India
- URL: www.tajmahal.com
- Summary: Taj Mahal, Taj Mahal history, taj mahal location, pictures, information, taj mahal tours, tickets and packages. Taj Mahal India
+ Title: Welcome to the City of Columbia
+ URL: columbiasc.net
+ Summary: The Columbia City Hall, also known as Old United States Court House and Post Office, was built in 1870.It was listed on the National Register of Historic Places in 1973.
 ]
 Relevant (Y/N)? n
 
 Result 6:
 [
- Title: An International Treasure - Taj Mahal
- URL: www.tajblues.com
- Summary: Official site includes news, tour schedule, discography, audio/video and pictures.
+ Title: Columbia Tourism: Best of Columbia, SC - TripAdvisor
+ URL: www.tripadvisor.com/Tourism-g54184
+ Summary: Columbia Tourism: TripAdvisor has 36,974 reviews of Columbia Hotels, Attractions, and Restaurants making it your best Columbia resource.
 ]
 Relevant (Y/N)? n
 
 Result 7:
 [
- Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
- URL: www.allmusic.com/artist/taj-mahal-mn0000790604
- Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+ Title: City of Columbia, Missouri's Official Government Web Site
+ URL: www.gocolumbiamo.com
+ Summary: The City of Columbia Missouri's official web site. Perform business transactions, view services, department information, upcoming meetings and events.
 ]
 Relevant (Y/N)? n
 
 Result 8:
 [
- Title: Taj Mahal — Free listening, videos, concerts, stats and ...
- URL: www.last.fm/music/Taj+Mahal
- Summary: Taj Mahal (born Henry Saint Clair Fredericks in New York City on May 17, 1942) is an American Grammy Award-winning blues musician who incorporates elements of world ...
-]
-Relevant (Y/N)? y
-
-Result 9:
-[
- Title: Amazon.com: Taj Mahal: Songs, Albums, Pictures, Bios
- URL: www.amazon.com/Taj-Mahal/e/B000APY7PY
- Summary: Visit Amazon.com's Taj Mahal Store to shop for Taj Mahal albums (CD, MP3, Vinyl), concert tickets, and other Taj Mahal-related products (DVDs, Books, T-shirts). Also ...
+ Title: Columbia SC Official Website | Events, Restaurants, Hotels ...
+ URL: www.columbiacvb.com
+ Summary: Find official travel information about Columbia, SC, including hotels, restaurants, events, and more from the online travel resource of Columbia, South Carolina, the ...
 ]
 Relevant (Y/N)? n
 
-Result 10:
+Result 9:
 [
- Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
- URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
- Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
+ Title: Columbia Law School
+ URL: www.law.columbia.edu
+ Summary: Features news about events at the Law School and recent publications of the Law School's faculty. For prospective students, the site offers curriculum information ...
 ]
 Relevant (Y/N)? y
 
+Result 10:
+[
+ Title: Men's Outerwear, Hiking Clothing & Accessories | Columbia ...
+ URL: www.columbia.com/mens
+ Summary: Shop online for rugged & durable Columbia Sportswear outdoor clothing & outdoor clothing accessories. Jackets, shirts & pants. Columbia Sportswear
+]
+Relevant (Y/N)? n
+
 ===============
 FEEDBACK SUMMARY
-Query: 'taj mahal'
+Query: 'columbia'
 Current Precision: 0.2
 Still blow the desired precision
 Indexing results ...
-Augment by new terms : musician
+Augment by new terms : new york
 ===============
 Round 2
-Query	= 'taj mahal musician'
+Query	= 'columbia new york'
 Precision	= 0.9
-URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal+musician%27
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27columbia+new+york%27
 Total no. of results : 10
 Bing Search Results: 
 ===============
 
 Result 1:
 [
- Title: An International Treasure - Taj Mahal
- URL: www.tajblues.com
- Summary: TAJ MAHAL Accepts Lifetime Achievement Award from Americana Music Association. September 18, 2014. Taj Mahal accepted the Lifetime Achievement Award from the ...
+ Title: Columbia University in the City of New York
+ URL: www.columbia.edu
+ Summary: Founded in 1754 as King's College by royal charter, it is the oldest institution of higher learning in the State of New York. Located in New York City and a member of ...
 ]
 Relevant (Y/N)? y
 
 Result 2:
 [
- Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
- URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
- Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
-]
-Relevant (Y/N)? y
-
-Result 3:
-[
- Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
- URL: www.allmusic.com/artist/taj-mahal-mn0000790604
- Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+ Title: Columbia, New York - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Columbia,_New_York
+ Summary: Columbia is a town in Herkimer County, New York, United States. As of the 2010 census, the town population was 1,580. The Town of Columbia is at the south border of ...
 ]
 Relevant (Y/N)? n
 
-Result 4:
+Result 3:
 [
- Title: Discography - Taj Mahal
- URL: www.tajblues.com/discography
- Summary: The latest in musical explorations for The Taj Mahal Trio. The Taj Mahal Trio: Taj Mahal (vocals, guitar, ... Hidden Treasures of Taj Mahal. 2012 Sony Music
+ Title: Columbia University - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Columbia_university
+ Summary: Columbia University (officially Columbia University in the City of New York) is a private Ivy League research university in Upper Manhattan, New York City.
 ]
 Relevant (Y/N)? y
 
+Result 4:
+[
+ Title: Columbia County, New York Homepage
+ URL: columbiacountyny.com
+ Summary: Columbia County Airport Information. The Columbia County Airport is a publicly owned, public-use, transport-category facility. It serves the aviation needs of ...
+]
+Relevant (Y/N)? n
+
 Result 5:
 [
- Title: Taj Mahal - YouTube
- URL: www.youtube.com/user/TajMahalMusic
- Summary: Welcome to a world of fun and fantasy where kids would love to be & parents can set them free! HooplaKidz is one of the most popular YouTube channels for preschoolers ...
+ Title: Home | Columbia Business School
+ URL: www8.gsb.columbia.edu
+ Summary: Columbia Business School brings a global perspective, cutting-edge methodology, and the energy of New York City to its MBA, EMBA, Executive Education, PhD, and MS ...
 ]
 Relevant (Y/N)? y
 
 Result 6:
 [
- Title: Taj Mahal - Taj Mahal - Amazon.com Music
- URL: www.amazon.com/Taj-Mahal/dp/B00004XSUW
- Summary: Amazon.com. Taj Mahal's been chasing the blues around the world for years, but rarely with the passion, energy, and clarity he brought to his first three albums.
+ Title: The hottest table in town is in a Columbia University dorm ...
+ URL: nypost.com/2015/10/07/the-hottest-table-in-town-is-in-a-columbia...
+ Summary: Columbia University senior Jonah Reider with food in his dorm apartment bedroom ... “New York City is known for having some of the best restaurants in ...
 ]
 Relevant (Y/N)? y
 
 Result 7:
 [
- Title: Taj Mahal — Free listening, videos, concerts, stats and ...
- URL: www.last.fm/music/Taj+Mahal
- Summary: Taj Mahal (born Henry Saint Clair Fredericks in New York City on May 17, 1942) is an American Grammy Award-winning blues musician who incorporates elements of world ...
+ Title: Columbia University in the City of New York
+ URL: https://www.facebook.com/columbia
+ Summary: Columbia University in the City of New York. 231,411 likes · 3,428 talking about this. For more than 250 years, Columbia has been a leader in higher...
 ]
 Relevant (Y/N)? y
 
 Result 8:
 [
- Title: Taj Mahal
- URL: https://www.facebook.com/tajmahal
- Summary: Taj Mahal is excited to present to the public for the first time prints from original etching Natch'l Blues! The Natch’l Blues prints are hand rolled ...
+ Title: Columbia University Medical Center | Discover. Educate ...
+ URL: www.cumc.columbia.edu
+ Summary: Columbia University | A-Z Listing | Find People | Research Profiles | Map | RSS | Giving; ... Is Medicare’s New Physician Payment System Doomed? Research Capsules
 ]
-Relevant (Y/N)? n
+Relevant (Y/N)? y
 
 Result 9:
 [
- Title: Taj Mahal's Songs | Stream Online Music Songs | Listen ...
- URL: https://myspace.com/tajblues/music
- Summary: Taj Mahal's songs: Listen to songs by Taj Mahal on Myspace, Stream Free Online Music by Taj Mahal
+ Title: NewYork-Presbyterian Hospital
+ URL: nyp.org
+ Summary: New York-Presbyterian is an academic medical center located in New York City. It is among the top ten hospitals in the United States.
 ]
-Relevant (Y/N)? y
+Relevant (Y/N)? n
 
 Result 10:
 [
- Title: Taj Mahal | Listen and Stream Free Music, Albums, New ...
- URL: https://myspace.com/tajblues
- Summary: Taj Mahal's profile including the latest music, albums, songs, music videos and more updates.
+ Title: Columbia, New York (NY 13491) profile: population, maps ...
+ URL: www.city-data.com/city/Columbia-New-York.html
+ Summary: Columbia, New York. add your; We are giving away $1200 in prizes - enter simply by sending us your own city pictures!
 ]
-Relevant (Y/N)? y
+Relevant (Y/N)? n
 
 ===============
 FEEDBACK SUMMARY
-Query: 'taj mahal musician'
-Current Precision: 0.8
+Query: 'columbia new york'
+Current Precision: 0.6
 Still blow the desired precision
 Indexing results ...
-Augment by new terms : songs
+Augment by new term: university
 ===============
 Round 3
-Query	= 'taj mahal musician songs'
+Query	= 'columbia new york university'
 Precision	= 0.9
-URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27taj+mahal+musician+songs%27
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27columbia+new+york+university%27
 Total no. of results : 10
 Bing Search Results: 
 ===============
 
 Result 1:
 [
- Title: Taj Mahal's Songs | Stream Online Music Songs | Listen ...
- URL: https://myspace.com/tajblues/music
- Summary: Taj Mahal's songs: Listen to songs by Taj Mahal on Myspace, Stream Free Online Music by Taj Mahal
+ Title: Columbia University in the City of New York
+ URL: www.columbia.edu
+ Summary: Founded in 1754 as King's College by royal charter, it is the oldest institution of higher learning in the State of New York. Located in New York City and a member of ...
 ]
 Relevant (Y/N)? y
 
 Result 2:
 [
- Title: Taj Mahal | Biography, Albums, & Streaming Radio | AllMusic
- URL: www.allmusic.com/artist/taj-mahal-mn0000790604
- Summary: Find Taj Mahal bio, music, credits, awards, & streaming radio on AllMusic - A guitarist and singer/songwriter who took an…
+ Title: Columbia University - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Columbia_university
+ Summary: Columbia University (officially Columbia University in the City of New York) is a private Ivy League research university in Upper Manhattan, New York City.
 ]
 Relevant (Y/N)? y
 
 Result 3:
 [
- Title: TAJ MAHAL - The Best Of Taj Mahal - Amazon.com Music
- URL: www.amazon.com/The-Best-Of-Taj-Mahal/dp/B00004XSUS
- Summary: I had heard the name, Taj Mahal over the years but never took the time to investigate his music. Then one day while listening to the radio, the song "Fishing Blues ...
+ Title: Columbia Law School
+ URL: www.law.columbia.edu
+ Summary: Columbia Law School is renowned for its intellectual rigor and high standards. ... The Trustees of Columbia University in the City of New York. ... New York, NY 10027 ...
 ]
 Relevant (Y/N)? y
 
 Result 4:
 [
- Title: SecondSpin - Music / Taj Mahal
- URL: www.secondspin.com/stores/ss/browse-music-by-artist.jsp?productId=...
- Summary: The Internet's largest buyer and seller of used CDs, used DVDs, used Blu-rays, and used Video Games. Choose from a huge selection of used CDs, used DVDs, used Blu ...
+ Title: Columbia College, Columbia University
+ URL: www.college.columbia.edu
+ Summary: Columbia College welcomes new students. ... Columbia University in the City of New York 208 Hamilton Hall, Mail Code 2805 1130 Amsterdam Avenue New York, NY 10027.
 ]
 Relevant (Y/N)? y
 
 Result 5:
 [
- Title: Discography - Taj Mahal
- URL: www.tajblues.com/discography
- Summary: At it’s very core it is the existing universal language of music. Some songs are new and ... The latest in musical explorations for The Taj Mahal Trio. The Taj ...
+ Title: Columbia University | Best College | US News
+ URL: colleges.usnews.rankingsandreviews.com/.../columbia-university-2707
+ Summary: Is Columbia University the best college for you? Find out at US News. See if Columbia University is ranked and get info on admission, tuition, student life, and more.
 ]
 Relevant (Y/N)? y
 
 Result 6:
 [
- Title: Taj Mahal (musician) - Wikipedia, the free encyclopedia
- URL: en.wikipedia.org/wiki/Taj_Mahal_(musician)
- Summary: Henry Saint Clair Fredericks (born May 17, 1942), who uses the stage name Taj Mahal, is an American blues musician. He often incorporates elements of world music into ...
+ Title: New York City | Columbia Undergraduate Admissions
+ URL: undergrad.admissions.columbia.edu/collections/studentlife/new-york...
+ Summary: New York City ... Columbia University and City Officials Mark Opening of Columbia ... NYC Announces New Columbia Institute for Data Sciences and ...
 ]
 Relevant (Y/N)? y
 
 Result 7:
 [
- Title: Taj Mahal — Free listening, videos, concerts, stats and ...
- URL: www.last.fm/music/Taj+Mahal
- Summary: Taj Mahal (born Henry Saint Clair Fredericks in New York City on May 17, 1942) is an American Grammy Award-winning blues musician who incorporates elements of world ...
+ Title: GoColumbiaLions.com—Official Web Site of Columbia ...
+ URL: www.gocolumbialions.com
+ Summary: The Official Online Home of the Columbia Lions, Columbia Athletics, Columbia University, Columbia Lions Official Merchandise, Columbia Lions broadcasting
 ]
 Relevant (Y/N)? y
 
 Result 8:
 [
- Title: Taj Mahal - YouTube
- URL: www.youtube.com/user/TajMahalMusic
- Summary: Welcome to a world of fun and fantasy where kids would love to be & parents can set them free! HooplaKidz is one of the most popular YouTube channels for preschoolers ...
+ Title: Home | Columbia Business School
+ URL: www8.gsb.columbia.edu
+ Summary: Columbia Business School brings a global perspective, cutting-edge methodology, and the energy of New York City to its MBA, EMBA, Executive Education, PhD, and MS ...
 ]
 Relevant (Y/N)? y
 
 Result 9:
 [
- Title: Taj Mahal :: Music in North Carolina :: Out and About at ...
- URL: www.wral.com/Music/Taj-Mahal/14944715
- Summary: A bonafide blues and rock legend, the inimitable Taj Mahal has been instrumental in preserving and shaping American roots music. With his booming baritone, nimble ...
+ Title: Home - Columbia University Graduate School of Journalism
+ URL: www.journalism.columbia.edu
+ Summary: Columbia University Graduate School of Journalism. Donate. Apply. Sign up. ... · Make New York City your beat. We live and work in the media capital of the world.
 ]
 Relevant (Y/N)? y
 
 Result 10:
 [
- Title: An International Treasure - Taj Mahal
- URL: www.tajblues.com
- Summary: TAJ MAHAL Accepts Lifetime Achievement Award from Americana Music Association. September 18, 2014. Taj Mahal accepted the Lifetime Achievement Award from the ...
+ Title: New York University
+ URL: www.nyu.edu
+ Summary: New York University. Search NYU. Pages | People; News at NYU. NYU Research: Development of Severe Liver Damage in Mid/Late-adulthood among PWID w/Chronic HCV | ...
 ]
-Relevant (Y/N)? y
+Relevant (Y/N)? n
 
 ===============
 FEEDBACK SUMMARY
-Query: 'taj mahal musician songs'
-Current Precision: 1.0
-Desired precision reached at round 3: 1.0
+Query: 'columbia new york university'
+Current Precision: 0.9
+Desired precision reached at round 3: 0.9
