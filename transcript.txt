@@ -868,3 +868,198 @@ FEEDBACK SUMMARY
 Query: 'columbia new york university'
 Current Precision: 0.9
 Desired precision reached at round 3: 0.9
+
+
+
+
+dyn-160-39-205-135:ADB-Project-1 AmyWang$ python MainScript.py -q 'milky way' -p 0.9
+===============
+Round 1
+Query	= 'milky way'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27milky+way%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Milky Way - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Milky_Way
+ Summary: The Milky Way is the galaxy that contains our Solar System. [nb 1] [dubious – discuss] Its name "milky" is derived from its appearance as a dim glowing band arching ...
+]
+Relevant (Y/N)? n
+
+Result 2:
+[
+ Title: Milky Way Galaxy: Facts About Our Galactic Home
+ URL: www.space.com/19915-milky-way-galaxy.html
+ Summary: The Milky Way is a barred spiral galaxy, about a hundred light-years across. We live on one of its minor spurs, the Orion Arm.
+]
+Relevant (Y/N)? n
+
+Result 3:
+[
+ Title: Milky Way Bar
+ URL: www.milkywaybar.com
+ Summary: See new and classic products, get recipes for baking with Milky Way, watch commercials, or find out where to buy products.
+]
+Relevant (Y/N)? y
+
+Result 4:
+[
+ Title: 10 Facts About the Milky Way - Universe Today
+ URL: www.universetoday.com/22285/facts-about-the-milky-way
+ Summary: The Milky Way Galaxy is an immense and very interesting place. Not only does it measure some 100,000–120,000 light-years in diameter, it is home to planet Earth ...
+]
+Relevant (Y/N)? n
+
+Result 5:
+[
+ Title: Milky Way
+ URL: https://www.facebook.com/MilkyWay
+ Summary: Milky Way. 2,239,116 likes · 2,273 talking about this. Bringing caramel, nougat and comfort in every bar since 1923. http://www.milkywaybar.com/
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: Milkyway Hair Online : MILKY WAY HAIR ONLINE Offers the ...
+ URL: www.milkywayhaironline.com
+ Summary: MILKY WAY HAIR ONLINE Offers the Best Wigs. Shop Online Now for the Most Beautiful Wigs, Hair Extensions and Lace Front Wigs, freetress and equal wigs
+]
+Relevant (Y/N)? n
+
+Result 7:
+[
+ Title: NASA - Milky Way Galaxy
+ URL: www.nasa.gov/mission_pages/GLAST/science/milky_way_galaxy.html
+ Summary: Not counting transient events such as gamma-ray bursts, the brightest object in the gamma-ray sky is the plane of our Milky Way Galaxy. This glow results from a vast ...
+]
+Relevant (Y/N)? n
+
+Result 8:
+[
+ Title: The Milky Way Project
+ URL: www.milkywayproject.org
+ Summary: The Milky Way Galaxy is massive! There's no way we could do this on our own. We need the help of the public to classify the thousands of images we have on file.
+]
+Relevant (Y/N)? n
+
+Result 9:
+[
+ Title: Milky Way galaxy - Space.com
+ URL: www.space.com/14249-milkyway-galaxy-photos.html
+ Summary: The Milky Way galaxy is home to 400 billion stars and our own sun and solar system. It is nearly 120,000 light-years across and a shining example of a …Read More » ...
+]
+Relevant (Y/N)? n
+
+Result 10:
+[
+ Title: Milky Way (chocolate bar) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Milky_Way_(chocolate_bar)
+ Summary: The Milky Way bar was created in 1923 by Frank C. Mars and originally manufactured in Minneapolis, Minnesota. The name and taste were taken from a famed malted milk ...
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'milky way'
+Current Precision: 0.3
+Still blow the desired precision
+Indexing results ...
+Augment by new term: bar
+===============
+Round 2
+Query	= 'milky way bar'
+Precision	= 0.9
+URL: https://api.datamarket.azure.com/Bing/Search/Web?%24top=10&%24format=json&Query=%27milky+way+bar%27
+Total no. of results : 10
+Bing Search Results: 
+===============
+
+Result 1:
+[
+ Title: Milky Way Bar
+ URL: www.milkywaybar.com
+ Summary: See new and classic products, get recipes for baking with Milky Way, watch commercials, or find out where to buy products.
+]
+Relevant (Y/N)? y
+
+Result 2:
+[
+ Title: Milky Way (chocolate bar) - Wikipedia, the free encyclopedia
+ URL: en.wikipedia.org/wiki/Milky_Way_bar
+ Summary: The Milky Way bar was created in 1923 by Frank C. Mars and originally manufactured in Minneapolis, Minnesota. The name and taste were taken from a famed malted milk ...
+]
+Relevant (Y/N)? y
+
+Result 3:
+[
+ Title: Amazon.com: milky way bars
+ URL: www.amazon.com/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3Amilky%20way%20bars
+ Summary: Amazon.com: milky way bars. Amazon Try Prime All ...
+]
+Relevant (Y/N)? y
+
+Result 4:
+[
+ Title: Our Products | MILKY WAY®
+ URL: www.milkywaybar.com/products
+ Summary: MILKY WAY ® Original Single MILKY WAY ® Original 2 To Go MILKY WAY ® Original Single (6 Pack)
+]
+Relevant (Y/N)? y
+
+Result 5:
+[
+ Title: Milky Way
+ URL: www.facebook.com/MilkyWay
+ Summary: Mars (which makes MILKY WAY) has reduced waste by approximately 4,500 tons per year since 2007, and has achieved its goal of zero-waste-to-landfill this year.
+]
+Relevant (Y/N)? y
+
+Result 6:
+[
+ Title: milky way bar | eBay
+ URL: www.ebay.com/sch/i.html?_nkw=milky+way+bar
+ Summary: Find great deals on eBay for milky way bar brownies. Shop with confidence.
+]
+Relevant (Y/N)? y
+
+Result 7:
+[
+ Title: Milky Way candy bar - OldTimeCandy.com
+ URL: www.oldtimecandy.com/walk-the-candy-aisle/milky-way
+ Summary: Milky Way candy bars are made with rich chocolate, creamy caramel and smooth nougat. The Milky Way Midnight is the new name for the Forever Yours bar.
+]
+Relevant (Y/N)? y
+
+Result 8:
+[
+ Title: Milky Way Bar - 36 / Box - Candy Favorites
+ URL: www.candyfavorites.com/milky-way-bar
+ Summary: Few people know that the Milky Way Bar was originally designed to taste like malted milk, an ingredient that was popular in 1923 when the candy bar was introduced!
+]
+Relevant (Y/N)? y
+
+Result 9:
+[
+ Title: Milky Way Bars}2 ingredients! - your homebased mom
+ URL: www.yourhomebasedmom.com/milky-way-bars2-ingredients
+ Summary: These Milky Way Bars are so easy and delicious and only require two ingredients!! Super Simple!
+]
+Relevant (Y/N)? y
+
+Result 10:
+[
+ Title: Calories in Milky Way - Milky Way Bar | Nutrition and ...
+ URL: www.caloriecount.com/calories-milky-way-bar-i19135
+ Summary: Curious about how many calories are in Milky Way Bar? Get nutrition information and sign up for a free online diet program at CalorieCount.
+]
+Relevant (Y/N)? y
+
+===============
+FEEDBACK SUMMARY
+Query: 'milky way bar'
+Current Precision: 1.0
+Desired precision reached at round 2: 1.0

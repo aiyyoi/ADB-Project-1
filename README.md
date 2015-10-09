@@ -30,7 +30,7 @@ dyn-160-39-205-135:ADB-Project-1 AmyWang$ tree
 
 ######Additional Remark: 
 1. Bing Search API accountKey is in file <code>key.json</code> and it is in the submission directory
-2. The transcript contains our results for 3 required test cases, and additional test case 'columbia' for Columbia University at required precision@10 0.9
+2. The transcript contains our results for 3 required test cases, and additional test case 'columbia' for Columbia University, 'milky way' for the candy bar, both at required precision@10 0.9
 
 
 ### Compile/ Run Instructions
