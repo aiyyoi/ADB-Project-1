@@ -93,14 +93,15 @@ $$ Q_{new} = (\alpha.Q_{orig}) + \frac{1}{|D_{rel}|}sum_{D_j \epsilon D_{rel} D_
 
 Here, we subtract the normalized weights of the non-relevant documents and add the normalized weights of the relevant documents to the original query weight vectors, therefore moving the query towards the desired set of terms. The three parameters &alpha;, &beta; and &gamma; are free parameters and can be tuned as desired. For out implementation, we found the following values to be ideal:
 
-<code>
-	&alpha; = 1
-	&beta; = 0.8
-	&gamma; = 0.3
-</code>
+<pre><code>&alpha; = 1
+&beta; = 0.8
+&gamma; = 0.3
+</code></pre>
+
+Once the new query vector is calculated, we then pick the new highest scoring terms that are not present in the original query. These terms are then appended to the query to produce the final expanded query.
 
 
-When to pick one word and when to pick two
+????????When to pick one word and when to pick two.???????????
 
 
 
