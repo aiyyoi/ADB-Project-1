@@ -1,3 +1,9 @@
+'''
+	Main business logic implementation
+	Reads in API key, parse inputs
+	Delegate to suitable classes for analysis
+'''
+
 import urllib2
 import urllib
 import base64

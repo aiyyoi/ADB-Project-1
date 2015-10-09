@@ -1,5 +1,5 @@
-import heapq
-
+'''
+	Rocchio implementation to rate and rank most relevant terms
 # Input:
 #	Document titles
 #	Document descriptions
@@ -9,6 +9,12 @@ import heapq
 #
 # Output:
 #	One or Two terms to be added to query for next iteration
+
+
+'''
+
+import heapq
+
 
 class ScoringSystem():
 
