@@ -89,8 +89,7 @@ The class also contains a method to produce the weight vectors for the documents
 ## Query Modification Mechanism
 In order to incoroporate the relevance feedback and expand the query with every successive iteration, we used the **Rocchio Algorithm** (Manning et al. 2009). This algorithm produces a new query term weight vector from the original query vector and the term weight vectors for the relevant and non-relevant documents according to the following equation:
 
-
-![equation]($$ Q_{new} = \alpha.Q_{orig} + \frac{1}{|D_{rel}|}sum_{D_j \epsilon D_{rel} D_j} - \frac{1}{|D_{nrel}|}sum_{D_k \epsilon D_{nrel} D_k} $$)
+![image](resources/equation.jpg)
 
 
 Here, we subtract the normalized weights of the non-relevant documents and add the normalized weights of the relevant documents to the original query weight vectors, therefore moving the query towards the desired set of terms. The three parameters &alpha;, &beta; and &gamma; are free parameters and can be tuned as desired. For out implementation, we found the following values to be ideal:
