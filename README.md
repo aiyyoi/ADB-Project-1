@@ -89,7 +89,9 @@ The class also contains a method to produce the weight vectors for the documents
 ## Query Modification Mechanism
 In order to incoroporate the relevance feedback and expand the query with every successive iteration, we used the **Rocchio Algorithm** (Manning et al. 2009). This algorithm produces a new query term weight vector from the original query vector and the term weight vectors for the relevant and non-relevant documents according to the following equation:
 
-$$ Q_{new} = (\alpha.Q_{orig}) + \frac{1}{|D_{rel}|}sum_{D_j \epsilon D_{rel} D_j} - \frac{1}{|D_{nrel}|}sum_{D_k \epsilon D_{nrel} D_k}$$
+
+![equation]($$ Q_{new} = \alpha.Q_{orig} + \frac{1}{|D_{rel}|}sum_{D_j \epsilon D_{rel} D_j} - \frac{1}{|D_{nrel}|}sum_{D_k \epsilon D_{nrel} D_k} $$)
+
 
 Here, we subtract the normalized weights of the non-relevant documents and add the normalized weights of the relevant documents to the original query weight vectors, therefore moving the query towards the desired set of terms. The three parameters &alpha;, &beta; and &gamma; are free parameters and can be tuned as desired. For out implementation, we found the following values to be ideal:
 
@@ -100,8 +102,7 @@ Here, we subtract the normalized weights of the non-relevant documents and add t
 
 Once the new query vector is calculated, we then pick the new highest scoring terms that are not present in the original query. These terms are then appended to the query to produce the final expanded query.
 
-
-????????When to pick one word and when to pick two.???????????
+One last decision to make before augment original query with new highest scoring tesms is to decide if the top two terms should be added or one. We decided to compare the weighted scores of the top two terms, if their absolute difference is within a small threshold ( <code><0.0001</code>), they are both considered highly relevant and will be augmented into new query for next round. Otherwise, only the top one term will be augmented. In our test case for 'columbia', this mechanism can make sure both 'new' and 'york' are added for next round, instead of appending the single word 'new' that does not make sense for information retrieval, and would not overshoot by appending two words for every round in other cases.
 
 
 
